@@ -1,0 +1,62 @@
+group 'com.jin'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'com.google.protobuf'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+    compile 'io.grpc:grpc-netty:1.4.0'
+    compile 'io.grpc:grpc-protobuf:1.4.0'
+    compile 'io.grpc:grpc-stub:1.4.0'
+}
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // ASSUMES GRADLE 2.12 OR HIGHER. Use plugin version 0.7.5 with earlier
+        // gradle versions
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.1'
+    }
+}
+
+protobuf {
+    // 指定 gradle generateProto 生成的文件的位置
+     generatedFilesBaseDir = "$projectDir/src"
+
+
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.2.0"
+    }
+    plugins {
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.4.0'
+
+        }
+    }
+    generateProtoTasks {
+        all()*.plugins {
+            grpc {
+                outputSubDir = 'java'//*Grpc.java类的存放目录，默认情况下是grpc目录，其他消息类默认是在java目录下
+            }
+        }
+    }
+
+
+}
+
+//clean {
+//    delete protobuf.generatedFilesBaseDir // generatedFilesBaseDir = "$projectDir/src" 这个千万不能指定为src否则会删除整个src目录。
+//}
