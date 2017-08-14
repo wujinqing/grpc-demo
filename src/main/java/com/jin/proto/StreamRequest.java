@@ -4,11 +4,11 @@
 package com.jin.proto;
 
 /**
- * Protobuf type {@code StreamRequest}
+ * Protobuf type {@code com.jin.proto.StreamRequest}
  */
 public  final class StreamRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:StreamRequest)
+    // @@protoc_insertion_point(message_implements:com.jin.proto.StreamRequest)
     StreamRequestOrBuilder {
   // Use StreamRequest.newBuilder() to construct.
   private StreamRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -62,12 +62,12 @@ public  final class StreamRequest extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.jin.proto.Student.internal_static_StreamRequest_descriptor;
+    return com.jin.proto.Student.internal_static_com_jin_proto_StreamRequest_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.jin.proto.Student.internal_static_StreamRequest_fieldAccessorTable
+    return com.jin.proto.Student.internal_static_com_jin_proto_StreamRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.jin.proto.StreamRequest.class, com.jin.proto.StreamRequest.Builder.class);
   }
@@ -244,20 +244,20 @@ public  final class StreamRequest extends
     return builder;
   }
   /**
-   * Protobuf type {@code StreamRequest}
+   * Protobuf type {@code com.jin.proto.StreamRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:StreamRequest)
+      // @@protoc_insertion_point(builder_implements:com.jin.proto.StreamRequest)
       com.jin.proto.StreamRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.jin.proto.Student.internal_static_StreamRequest_descriptor;
+      return com.jin.proto.Student.internal_static_com_jin_proto_StreamRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.jin.proto.Student.internal_static_StreamRequest_fieldAccessorTable
+      return com.jin.proto.Student.internal_static_com_jin_proto_StreamRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.jin.proto.StreamRequest.class, com.jin.proto.StreamRequest.Builder.class);
     }
@@ -286,7 +286,7 @@ public  final class StreamRequest extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.jin.proto.Student.internal_static_StreamRequest_descriptor;
+      return com.jin.proto.Student.internal_static_com_jin_proto_StreamRequest_descriptor;
     }
 
     public com.jin.proto.StreamRequest getDefaultInstanceForType() {
@@ -454,10 +454,10 @@ public  final class StreamRequest extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:StreamRequest)
+    // @@protoc_insertion_point(builder_scope:com.jin.proto.StreamRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:StreamRequest)
+  // @@protoc_insertion_point(class_scope:com.jin.proto.StreamRequest)
   private static final com.jin.proto.StreamRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.jin.proto.StreamRequest();

@@ -4,7 +4,7 @@
 package com.jin.proto;
 
 public interface StudentInfoResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:StudentInfoResponse)
+    // @@protoc_insertion_point(interface_extends:com.jin.proto.StudentInfoResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**

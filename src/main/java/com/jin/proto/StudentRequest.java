@@ -4,11 +4,11 @@
 package com.jin.proto;
 
 /**
- * Protobuf type {@code StudentRequest}
+ * Protobuf type {@code com.jin.proto.StudentRequest}
  */
 public  final class StudentRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:StudentRequest)
+    // @@protoc_insertion_point(message_implements:com.jin.proto.StudentRequest)
     StudentRequestOrBuilder {
   // Use StudentRequest.newBuilder() to construct.
   private StudentRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -61,12 +61,12 @@ public  final class StudentRequest extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.jin.proto.Student.internal_static_StudentRequest_descriptor;
+    return com.jin.proto.Student.internal_static_com_jin_proto_StudentRequest_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.jin.proto.Student.internal_static_StudentRequest_fieldAccessorTable
+    return com.jin.proto.Student.internal_static_com_jin_proto_StudentRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.jin.proto.StudentRequest.class, com.jin.proto.StudentRequest.Builder.class);
   }
@@ -219,20 +219,20 @@ public  final class StudentRequest extends
     return builder;
   }
   /**
-   * Protobuf type {@code StudentRequest}
+   * Protobuf type {@code com.jin.proto.StudentRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:StudentRequest)
+      // @@protoc_insertion_point(builder_implements:com.jin.proto.StudentRequest)
       com.jin.proto.StudentRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.jin.proto.Student.internal_static_StudentRequest_descriptor;
+      return com.jin.proto.Student.internal_static_com_jin_proto_StudentRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.jin.proto.Student.internal_static_StudentRequest_fieldAccessorTable
+      return com.jin.proto.Student.internal_static_com_jin_proto_StudentRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.jin.proto.StudentRequest.class, com.jin.proto.StudentRequest.Builder.class);
     }
@@ -261,7 +261,7 @@ public  final class StudentRequest extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.jin.proto.Student.internal_static_StudentRequest_descriptor;
+      return com.jin.proto.Student.internal_static_com_jin_proto_StudentRequest_descriptor;
     }
 
     public com.jin.proto.StudentRequest getDefaultInstanceForType() {
@@ -385,10 +385,10 @@ public  final class StudentRequest extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:StudentRequest)
+    // @@protoc_insertion_point(builder_scope:com.jin.proto.StudentRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:StudentRequest)
+  // @@protoc_insertion_point(class_scope:com.jin.proto.StudentRequest)
   private static final com.jin.proto.StudentRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.jin.proto.StudentRequest();

@@ -5,6 +5,7 @@ import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.stub.StreamObserver;
 
+import java.time.LocalDateTime;
 import java.util.Iterator;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
@@ -65,5 +66,36 @@ public class GrpcClient {
         if (!latch.await(1, TimeUnit.MINUTES)) {
             System.out.println("recordRoute can not finish within 1 minutes");
         }
+
+        StreamObserver<StreamResponse> responseStreamObserver = new StreamObserver<StreamResponse>() {
+            @Override
+            public void onNext(StreamResponse value) {
+                System.out.println(value.getResponseInfo());
+            }
+
+            @Override
+            public void onError(Throwable t) {
+
+            }
+
+            @Override
+            public void onCompleted() {
+
+            }
+        };
+
+        StreamObserver<StreamRequest> requestStreamObserver = asyncStub.biTalk(responseStreamObserver);
+
+        for(int i = 0; i <= 10; i++)
+        {
+            requestStreamObserver.onNext(StreamRequest.newBuilder().setRequestInfo(LocalDateTime.now().toString()).build());
+
+            Thread.sleep(1000);
+        }
+
+        requestStreamObserver.onCompleted();
+
+        Thread.sleep(20000);
+
     }
 }

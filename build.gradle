@@ -34,7 +34,7 @@ buildscript {
 
 protobuf {
     // 指定 gradle generateProto 生成的文件的位置
-     generatedFilesBaseDir = "$projectDir/src"
+     generatedFilesBaseDir = "src"
 
 
     protoc {

@@ -4,7 +4,7 @@
 package com.jin.proto;
 
 public interface StreamRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:StreamRequest)
+    // @@protoc_insertion_point(interface_extends:com.jin.proto.StreamRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**

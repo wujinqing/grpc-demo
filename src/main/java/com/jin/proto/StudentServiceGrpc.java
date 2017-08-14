@@ -24,7 +24,7 @@ public final class StudentServiceGrpc {
 
   private StudentServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "StudentService";
+  public static final String SERVICE_NAME = "com.jin.proto.StudentService";
 
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
@@ -33,7 +33,7 @@ public final class StudentServiceGrpc {
       io.grpc.MethodDescriptor.<com.jin.proto.MyRequest, com.jin.proto.MyResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
           .setFullMethodName(generateFullMethodName(
-              "StudentService", "getStudentByUsername"))
+              "com.jin.proto.StudentService", "GetStudentByUsername"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.jin.proto.MyRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
@@ -45,7 +45,7 @@ public final class StudentServiceGrpc {
       io.grpc.MethodDescriptor.<com.jin.proto.StudentRequest, com.jin.proto.StudentResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
           .setFullMethodName(generateFullMethodName(
-              "StudentService", "getStudentsByAge"))
+              "com.jin.proto.StudentService", "getStudentsByAge"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.jin.proto.StudentRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
@@ -57,7 +57,7 @@ public final class StudentServiceGrpc {
       io.grpc.MethodDescriptor.<com.jin.proto.StudentInfoRequest, com.jin.proto.StudentInfoResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
           .setFullMethodName(generateFullMethodName(
-              "StudentService", "saveStudents"))
+              "com.jin.proto.StudentService", "saveStudents"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.jin.proto.StudentInfoRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
@@ -69,7 +69,7 @@ public final class StudentServiceGrpc {
       io.grpc.MethodDescriptor.<com.jin.proto.StreamRequest, com.jin.proto.StreamResponse>newBuilder()
           .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
           .setFullMethodName(generateFullMethodName(
-              "StudentService", "BiTalk"))
+              "com.jin.proto.StudentService", "BiTalk"))
           .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
               com.jin.proto.StreamRequest.getDefaultInstance()))
           .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(

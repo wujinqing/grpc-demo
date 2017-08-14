@@ -3,6 +3,8 @@ package com.jin.grpc;
 import com.jin.proto.*;
 import io.grpc.stub.StreamObserver;
 
+import java.util.UUID;
+
 public class StudentServiceImpl extends StudentServiceGrpc.StudentServiceImplBase{
     @Override
     public void getStudentByUsername(MyRequest request, StreamObserver<MyResponse> responseObserver) {
@@ -43,6 +45,29 @@ public class StudentServiceImpl extends StudentServiceGrpc.StudentServiceImplBas
             public void onCompleted() {
                 System.out.println("完成");
                 responseObserver.onNext(StudentInfoResponse.newBuilder().setStatus("success!").build());
+                responseObserver.onCompleted();
+            }
+        };
+    }
+
+    @Override
+    public StreamObserver<StreamRequest> biTalk(StreamObserver<StreamResponse> responseObserver) {
+        return new StreamObserver<StreamRequest>() {
+            @Override
+            public void onNext(StreamRequest value) {
+                System.out.println(value.getRequestInfo());
+
+                responseObserver.onNext(StreamResponse.newBuilder().setResponseInfo(UUID.randomUUID().toString()).build());
+            }
+
+            @Override
+            public void onError(Throwable t) {
+                System.out.println(t.getMessage());
+            }
+
+            @Override
+            public void onCompleted() {
+
                 responseObserver.onCompleted();
             }
         };

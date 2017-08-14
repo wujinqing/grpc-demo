@@ -4,11 +4,11 @@
 package com.jin.proto;
 
 /**
- * Protobuf type {@code MyRequest}
+ * Protobuf type {@code com.jin.proto.MyRequest}
  */
 public  final class MyRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:MyRequest)
+    // @@protoc_insertion_point(message_implements:com.jin.proto.MyRequest)
     MyRequestOrBuilder {
   // Use MyRequest.newBuilder() to construct.
   private MyRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
@@ -62,12 +62,12 @@ public  final class MyRequest extends
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.jin.proto.Student.internal_static_MyRequest_descriptor;
+    return com.jin.proto.Student.internal_static_com_jin_proto_MyRequest_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.jin.proto.Student.internal_static_MyRequest_fieldAccessorTable
+    return com.jin.proto.Student.internal_static_com_jin_proto_MyRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.jin.proto.MyRequest.class, com.jin.proto.MyRequest.Builder.class);
   }
@@ -244,20 +244,20 @@ public  final class MyRequest extends
     return builder;
   }
   /**
-   * Protobuf type {@code MyRequest}
+   * Protobuf type {@code com.jin.proto.MyRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:MyRequest)
+      // @@protoc_insertion_point(builder_implements:com.jin.proto.MyRequest)
       com.jin.proto.MyRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.jin.proto.Student.internal_static_MyRequest_descriptor;
+      return com.jin.proto.Student.internal_static_com_jin_proto_MyRequest_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.jin.proto.Student.internal_static_MyRequest_fieldAccessorTable
+      return com.jin.proto.Student.internal_static_com_jin_proto_MyRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.jin.proto.MyRequest.class, com.jin.proto.MyRequest.Builder.class);
     }
@@ -286,7 +286,7 @@ public  final class MyRequest extends
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.jin.proto.Student.internal_static_MyRequest_descriptor;
+      return com.jin.proto.Student.internal_static_com_jin_proto_MyRequest_descriptor;
     }
 
     public com.jin.proto.MyRequest getDefaultInstanceForType() {
@@ -454,10 +454,10 @@ public  final class MyRequest extends
     }
 
 
-    // @@protoc_insertion_point(builder_scope:MyRequest)
+    // @@protoc_insertion_point(builder_scope:com.jin.proto.MyRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:MyRequest)
+  // @@protoc_insertion_point(class_scope:com.jin.proto.MyRequest)
   private static final com.jin.proto.MyRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new com.jin.proto.MyRequest();
